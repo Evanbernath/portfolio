@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  flex-direction: column;
+  color:#3A5FCD;
+  background-color: #D4D4D4;
+  max-width: 900px;
+  margin: 0px auto;
+  font-family: 'Lora', serif;
+}
+
+a {
+    color:#3A5FCD;
+}
+
+a:hover {
+    color: black;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+#navlist {
+    list-style: none;
+    display: flex;
+}
+
+#navlist li {
+    margin: 0px 5px;
+}
