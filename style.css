@@ -1,11 +1,16 @@
 body {
   display: flex;
   flex-direction: column;
-  color:#3A5FCD;
+  color:#1841bb;
   background-color: #D4D4D4;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0px auto;
   font-family: 'Lora', serif;
+  
+}
+
+section {
+    margin: 3rem 0;
 }
 
 a {
@@ -37,9 +42,14 @@ i {
 
 header {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
+  margin-top: 10px;
   
+}
+
+header h1, header ul {
+    margin-bottom: 0px;
 }
 
 #navlist {
@@ -54,6 +64,8 @@ header {
 
 #skills-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skill {
@@ -68,4 +80,16 @@ header {
 
 .skill p {
     margin: 0;
+}
+
+.project {
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0 1rem;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+#about-me p {
+    margin: 1rem 2rem;
 }
