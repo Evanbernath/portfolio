@@ -9,15 +9,30 @@ body {
 }
 
 a {
-    color:#3A5FCD;
+    color:#333;
+    text-decoration: none;
 }
 
 a:hover {
     color: black;
 }
 
+nav a:hover {
+    font-size: 1.25rem;
+}
+
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
+}
+
+i {
+    font-size: 40px;
+    margin: 10px;
+    color: #333;
+}
+
+#social-links i:hover {
+    color: black;
 }
 
 header {
@@ -30,8 +45,27 @@ header {
 #navlist {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 #navlist li {
     margin: 0px 5px;
+}
+
+#skills-container {
+    display: flex;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    margin: 0px 10px;
+    max-width: 80px;
+    align-items: center;
+    text-align: center;
+}
+
+.skill p {
+    margin: 0;
 }
