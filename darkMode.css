@@ -46,7 +46,7 @@ button {
 
 i {
   font-size: 3rem;
-  margin: .8rem;
+  margin: 0.8rem;
   color: #ffffff;
 }
 
@@ -58,7 +58,6 @@ header {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  margin-top: 10px;
 }
 
 header h1,
@@ -69,7 +68,8 @@ header ul {
 #navlist {
   list-style: none;
   display: flex;
-  align-items: center;
+  padding-left: 0;
+  margin-top: 0;
 }
 
 #navlist li {
@@ -86,10 +86,10 @@ header ul {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  margin: 0px 10px;
-  max-width: 80px;
+  margin: 0.5rem 0.8rem;
   align-items: center;
   text-align: center;
+  width: 10%;
 }
 
 .skill p {
@@ -114,9 +114,11 @@ button {
   border: 2px solid white;
   display: flex;
   align-items: center;
-  margin: auto;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.1);
+  max-width: fit-content;
+  align-self: flex-end;
+  margin-right: 10px;
 }
 
 button i {
@@ -132,12 +134,55 @@ button i {
 footer {
   margin-top: 50px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
+@media (min-width: 1031px) {
+  .mobile {
+    display: none;
+  }
+}
 
 @media (max-width: 1030px) {
+  html {
+    font-size: 32px;
+  }
 
   body {
     margin: 20px 15px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #navlist {
+    justify-content: space-between;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  .skill {
+    width: 40%;
+  }
+
+  #skills-container {
+    justify-content: space-between;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  header h1 {
+    margin-bottom: 2rem;
+  }
+
+  nav a:hover {
+    font-size: 1rem;
   }
 }

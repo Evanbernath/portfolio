@@ -1,18 +1,22 @@
-const button = document.querySelector("button");
+const darkModeButtons = document.querySelectorAll(".dark-mode");
 
-button.addEventListener("click", (event) => {
-  let stylesheet = document.getElementById("themeStylesheet");
-  let currentTheme =
-    stylesheet.getAttribute("href") === "lightMode.css"
-      ? "darkMode.css"
-      : "lightMode.css";
+darkModeButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    let stylesheet = document.getElementById("themeStylesheet");
+    let currentTheme =
+      stylesheet.getAttribute("href") === "lightMode.css"
+        ? "darkMode.css"
+        : "lightMode.css";
+  
+    // Apply new theme
+    stylesheet.setAttribute("href", currentTheme);
+  
+    // Save theme preference to localStorage
+    localStorage.setItem("selectedTheme", currentTheme);
+  });
+})
 
-  // Apply new theme
-  stylesheet.setAttribute("href", currentTheme);
 
-  // Save theme preference to localStorage
-  localStorage.setItem("selectedTheme", currentTheme);
-});
 
 // Apply saved theme when the page loads
 window.addEventListener("DOMContentLoaded", () => {
