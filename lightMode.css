@@ -1,10 +1,14 @@
+html {
+  font-size: 16px;
+}
+
 body {
   display: flex;
   flex-direction: column;
   color: #1841bb;
   background-color: #d4d4d4;
   max-width: 1000px;
-  margin: 0px auto;
+  margin: 20px auto;
   font-family: "Lora", serif;
 }
 
@@ -25,6 +29,14 @@ nav a:hover {
   font-size: 1.25rem;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
 h1,
 h2,
 h3,
@@ -33,8 +45,8 @@ button {
 }
 
 i {
-  font-size: 40px;
-  margin: 10px;
+  font-size: 3rem;
+  margin: .8rem;
   color: #333;
 }
 
@@ -97,7 +109,7 @@ header ul {
 }
 
 button {
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 1rem;
   border: 2px solid black;
   display: flex;
@@ -108,7 +120,7 @@ button {
 }
 
 button i {
-  font-size: 20px;
+  font-size: 1.5rem;
   margin: 0;
 }
 
@@ -119,4 +131,11 @@ button i {
 footer {
   margin-top: 50px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1030px) {
+
+  body {
+    margin: 20px 15px;
+  }
 }
