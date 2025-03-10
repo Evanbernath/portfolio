@@ -1,18 +1,21 @@
 const button = document.querySelector("button");
-let darkMode = false
 
 button.addEventListener("click", (event) => {
-    
-    if (!darkMode){
-        document.querySelector("#lightMode").disabled = true;
-        document.querySelector("#darkMode").disabled = false;
-        darkMode = true;
-    }
-    
-    else {
-        document.querySelector("#lightMode").disabled = false;
-        document.querySelector("#darkMode").disabled = true;
-        darkMode = false;
+  let stylesheet = document.getElementById("themeStylesheet");
+  let currentTheme =
+    stylesheet.getAttribute("href") === "lightMode.css"
+      ? "darkMode.css"
+      : "lightMode.css";
 
-    }
-})
+  // Apply new theme
+  stylesheet.setAttribute("href", currentTheme);
+
+  // Save theme preference to localStorage
+  localStorage.setItem("selectedTheme", currentTheme);
+});
+
+// Apply saved theme when the page loads
+window.addEventListener("DOMContentLoaded", () => {
+  let savedTheme = localStorage.getItem("selectedTheme") || "lightMode.css";
+  document.getElementById("themeStylesheet").setAttribute("href", savedTheme);
+});

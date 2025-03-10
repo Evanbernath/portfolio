@@ -1,8 +1,8 @@
 body {
   display: flex;
   flex-direction: column;
-  color: #8aa2eb;
-  background-color: #333;
+  color: #1841bb;
+  background-color: #d4d4d4;
   max-width: 1000px;
   margin: 0px auto;
   font-family: "Lora", serif;
@@ -13,12 +13,12 @@ section {
 }
 
 a {
-  color: white;
+  color: #333;
   text-decoration: none;
 }
 
 a:hover {
-  color: whitesmoke;
+  color: black;
 }
 
 nav a:hover {
@@ -35,7 +35,7 @@ button {
 i {
   font-size: 40px;
   margin: 10px;
-  color: #ffffff;
+  color: #333;
 }
 
 #social-links i:hover {
@@ -73,7 +73,7 @@ header ul {
 .skill {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
+  color: #333;
   margin: 0px 10px;
   max-width: 80px;
   align-items: center;
@@ -89,7 +89,7 @@ header ul {
   border-radius: 1rem;
   margin: 1rem;
   padding: 0 1rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #about-me p {
@@ -99,12 +99,12 @@ header ul {
 button {
   font-size: 16px;
   border-radius: 1rem;
-  border: 2px solid white;
+  border: 2px solid black;
   display: flex;
   align-items: center;
   margin: auto;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 button i {
@@ -114,7 +114,6 @@ button i {
 
 #button-text {
   margin-left: 5px;
-  color: white;
 }
 
 footer {
