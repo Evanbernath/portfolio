@@ -26,7 +26,7 @@ nav a:hover {
     font-size: 1.25rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3, button {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -87,9 +87,29 @@ header h1, header ul {
     border-radius: 1rem;
     margin: 1rem;
     padding: 0 1rem;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .5);
 }
 
 #about-me p {
     margin: 1rem 2rem;
+}
+
+button {
+    font-size: 16px;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+button i {
+    font-size: 20px;
+    margin: 0;
+}
+
+#button-text {
+    margin-left: 5px;
 }

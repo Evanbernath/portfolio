@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    flex-direction: column;
+    color:#8aa2eb;
+    background-color: #333;
+    max-width: 1000px;
+    margin: 0px auto;
+    font-family: 'Lora', serif;
+    
+  }
+  
+  section {
+      margin: 3rem 0;
+  }
+  
+  a {
+      color:white;
+      text-decoration: none;
+  }
+  
+  a:hover {
+      color: whitesmoke;
+  }
+  
+  nav a:hover {
+      font-size: 1.25rem;
+  }
+  
+  h1, h2, h3, button {
+      font-family: 'Montserrat', sans-serif;
+  }
+  
+  i {
+      font-size: 40px;
+      margin: 10px;
+      color: #ffffff;
+  }
+  
+  #social-links i:hover {
+      color: black;
+  }
+  
+  header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+  }
+  
+  header h1, header ul {
+      margin-bottom: 0px;
+  }
+  
+  #navlist {
+      list-style: none;
+      display: flex;
+      align-items: center;
+  }
+  
+  #navlist li {
+      margin: 0px 5px;
+  }
+  
+  #skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .skill {
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+      margin: 0px 10px;
+      max-width: 80px;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .skill p {
+      margin: 0;
+  }
+  
+  .project {
+      border: 2px solid black;
+      border-radius: 1rem;
+      margin: 1rem;
+      padding: 0 1rem;
+      background-color: rgba(255, 255, 255, .1);
+  }
+  
+  #about-me p {
+      margin: 1rem 2rem;
+  }
+  
+  button {
+      font-size: 16px;
+      border-radius: 1rem;
+      border: 2px solid white;
+      display: flex;
+      align-items: center;
+      margin: auto;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  button i {
+      font-size: 20px;
+      margin: 0;
+  }
+  
+  #button-text {
+      margin-left: 5px;
+      color: white;
+  }

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" id="lightMode" />
+    <link rel="stylesheet" href="darkMode.css" id = "darkMode" disabled/>
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
@@ -10,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -117,6 +119,10 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <button><i class="fa-solid fa-cloud-sun"></i>
+        <div id="button-text">Toggle Dark Mode</div>
+      </button>
+    </footer>
   </body>
 </html>
